@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Chit-Chatty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C8A2C8; /* Lilac color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-heading {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Additional styling for the form */
+        .centered-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centered-form__box {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Navigation link */
+        .nav-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Chit-Chatty</h1>
+    </div>
+
+    <a href="/about.html" class="nav-link">About</a>
+
+    <div class="container">
+        <h2>Chit-Chatty: Where Conversations Come to Life</h2>
+        <p class="welcome-heading"> <i>At Chit-Chatty, we believe that every conversation is an adventure. Dive into lively discussions, share stories, and create memories with friends both old and new.</i></p>
+        <p class="message">Ready to embark on this journey? Please login with your name and join the room.</p>
+
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h2>Join</h2>
+                <form action="/chat.html">
+                    <label for="username">Display name</label>
+                    <input type="text" name="username" placeholder="Display name" required>
+                    <label for="room">Room</label>
+                    <input type="text" name="room" placeholder="Room" required>
+                    <button>Join</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
